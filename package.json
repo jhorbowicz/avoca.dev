@@ -1,0 +1,10 @@
+{
+  "name": "avoca.dev",
+  "version": "1.0.0",
+  "description": "Simple blog written to check how far can I go with minimal amount of dependencies",
+  "main": "index.js",
+  "repository": "git@github.com:jhorbowicz/avoca.dev.git",
+  "author": "Jan Horbowicz <janhorbowicz@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
