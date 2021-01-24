@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="tea">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +17,37 @@
             <span class="nav-item"><a href="/about-me.html">About me</a></span>
         </nav>
     </header>
-    <section class="description">
+    <main class="description">
         <h2>About</h2>
-        <p class="text">This is the calm part of internet. Take your tea, and enjoy.</p>
-    </section>
+        <p class="text">
+            This is the calm part of internet.
+            Take your <span onclick="selectBeverage(event)" id="tea" class="selected">tea</span> /
+            <span onclick="selectBeverage(event)" id="coffee">coffee</span>, and enjoy.
+        </p>
+    </main>
     <footer>
         Thanks for reading!
     </footer>
+
+    <script>
+        selectBeverage = (event) => {
+            const teaSpan = document.getElementById('tea');
+            const coffeeSpan = document.getElementById('coffee');
+
+            if(event.target.id === 'tea') {
+                teaSpan.classList.add('selected');
+                document.querySelector('html').classList.add('tea');
+                document.querySelector('html').classList.remove('coffee');
+                coffeeSpan.classList.remove('selected');
+
+            }
+            else if (event.target.id === 'coffee') {
+                coffeeSpan.classList.add('selected');
+                document.querySelector('html').classList.remove('tea');
+                document.querySelector('html').classList.add('coffee');
+                teaSpan.classList.remove('selected');
+            }
+        }
+    </script>
 </body>
 </html>
