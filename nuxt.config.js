@@ -13,6 +13,7 @@ export default {
     }]
   ],
   css: ['~/assets/css/global', '~/assets/css/tailwind'],
+  target: 'static',
   head: {
     title: 'Internet retreat',
     meta: [
