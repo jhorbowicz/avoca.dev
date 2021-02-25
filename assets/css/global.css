@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  @apply p-2 border border-jet border-solid bg-white;
+}
+
+.colors-transition {
+  @apply transition-colors duration-300 ease-out;
+}
+
+#cv-photo {
+  height: 180px;
+}
+
+.page-content {
+  min-height: calc(100vh - 72px - 68px - 32px);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+body {
+  @apply bg-white;
+}
+
+h1 {
+  @apply font-accent font-semibold text-4xl;
+}
+
+h2 {
+  @apply font-bold font-main text-2xl;
+}
+
+h3 {
+  @apply font-bold font-main text-xl;
+}
+
+h4 {
+  @apply font-bold font-main text-lg;
+}

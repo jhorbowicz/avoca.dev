@@ -1,10 +1,22 @@
 {
   "name": "avoca.dev",
+  "license": "CC BY-SA 4.0",
   "version": "1.0.0",
-  "description": "Simple blog written to check how far can I go with minimal amount of dependencies",
-  "main": "index.js",
-  "repository": "git@github.com:jhorbowicz/avoca.dev.git",
-  "author": "Jan Horbowicz <janhorbowicz@gmail.com>",
-  "license": "MIT",
-  "private": false
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^1.2.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
 }
